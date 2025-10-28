@@ -41,4 +41,4 @@ Includes:
 - LTE
 - Bluetooth
 
-The link layer is last, and is responsible for handling the physical connection to te network transmitting raw data over a medium. This speeds up the link between a network.
+The link layer is last, and is responsible for handling the physical connection to the network transmitting raw data over a medium. This speeds up the link between a network.
