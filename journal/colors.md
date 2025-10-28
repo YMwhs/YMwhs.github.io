@@ -1,9 +1,9 @@
 # The Pixel Images
 
 The Drawing in Real Life:
-![Drawing](Photo on 10-28-25 at 9:44 AM.jpg)
+![Drawing]()
 The Drawing in Code.org:
-![Drawing2](Screenshot 2025-10-28 at 9.14.57 AM.png)
+![Drawing2](/Desktop/1011494/Users/Macintosh HD/Screenshot 2025-10-28 at 9.14.57 AM.png)
 The Binary behind it:
 0000 1010
 0000 1010
