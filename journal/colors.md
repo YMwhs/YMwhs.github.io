@@ -3,7 +3,7 @@
 The Drawing in Real Life:
 ![Drawing]()
 The Drawing in Code.org:
-![Drawing2](Screenshot 2025-10-28 at 9.14.57 AM.png)
+![Drawing2](Drawing1.png)
 The Binary behind it:
 0000 1010
 0000 1010
