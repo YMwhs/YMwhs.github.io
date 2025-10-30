@@ -1,9 +1,10 @@
 # The Pixel Images
 
+
 The Drawing in Real Life:
-![Drawing]()
+![Drawing](../Drawing1.png)
 The Drawing in Code.org:
-![Drawing2](website/Drawing1.png)
+![Drawing2]()
 The Binary behind it:
 0000 1010
 0000 1010
