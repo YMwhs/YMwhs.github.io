@@ -2,7 +2,7 @@
 
 
 The Drawing in Real Life:
-![Drawing](../Drawing1.png)
+![Drawing](Drawing1.png)
 The Drawing in Code.org:
 ![Drawing2]()
 The Binary behind it:
