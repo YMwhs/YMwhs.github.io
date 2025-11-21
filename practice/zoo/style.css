@@ -1,0 +1,20 @@
+	table, td, tr, th{
+		border: 1px solid black;
+		border-collapse: collapse;
+		background-color: #A9E190;
+	}
+	body{
+		background-color: #DBF4AD;
+	}
+	h1{
+		color: #767522;
+	}
+	#info{
+		background-color: #A5AA52;
+	}
+	.highlight{
+		background-color: #CDC776;
+	}
+	#zoo{
+		text-decoration: underline;
+	}
