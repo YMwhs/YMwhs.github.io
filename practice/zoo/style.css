@@ -5,9 +5,12 @@
 	}
 	body{
 		background-color: #DBF4AD;
+		font-family: "Helvetica", serif;
 	}
 	h1{
 		color: #767522;
+		padding: 10px;
+		margin-bottom: 20px;
 	}
 	#info{
 		background-color: #A5AA52;
