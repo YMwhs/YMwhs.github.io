@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Who wants ice cream?</title>
+		<script src="../js/validate.js"></script>
+	</head>
+	<body>
+		<form action="https://httpbin.org/post" method="post">
+			<input type="email" name="youremail" required>
+			What is your email address?
+			<input type="text" name="yournumber" required>
+                        What is your phone number?
+			<input type="number" name="numberofpeoplebrought" required>
+			How many people will you bring with you to the party?
+			<input type="radio" name="flavor" id="creamflavor">
+			What is your favorite flavor of ice cream?
+			<label for="creamflavor">Vanilla</label>
+			<label for="creamflavor">Chocolate Chip</label>
+			<label for="creamflavor">Strawberry</label>
+			<label for="creamflavor">Other</label>
+			<input type="checkbox" name="toppings" id="tops">
+			Which toppings do you like?
+			<label for="tops">Sprinkles</label>
+			<label for="tops">Magic Shell</label>
+			<label for="tops">Chocolate Chips</label>
+			<label for="tops">Gummy Bears</label>
+			<label for="tops">Other</label>
+			<label for="entertainment">What kind of entertainment should we have at the party?</label>
+			<select id="entertainment" name="entertainment">
+				<option value="ballonanimals">Balloon Animals</option>
+				<option value="bouncehouse">Bounce House</option>
+				<option value="clown">Clown</option>
+				<option value="cornhole">Cornhole</option>
+				<option value="dj">DJ</option>
+				<option value="facepainting">Face Painting</option>
+				<option value="magician">Magician</option>
+			</select>
+			<input type="text" name="suggestions">
+			Do you have any other suggestions or comments?
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>
