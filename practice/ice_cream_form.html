@@ -7,38 +7,75 @@
 	</head>
 	<body>
 		<form action="https://httpbin.org/post" method="post">
-			<input type="email" name="youremail" required>
-			What is your email address?
-			<input type="text" name="yournumber" required>
-                        What is your phone number?
-			<input type="number" name="numberofpeoplebrought" required>
-			How many people will you bring with you to the party?
-			<input type="radio" name="flavor" id="creamflavor">
-			What is your favorite flavor of ice cream?
-			<label for="creamflavor">Vanilla</label>
-			<label for="creamflavor">Chocolate Chip</label>
-			<label for="creamflavor">Strawberry</label>
-			<label for="creamflavor">Other</label>
-			<input type="checkbox" name="toppings" id="tops">
-			Which toppings do you like?
-			<label for="tops">Sprinkles</label>
-			<label for="tops">Magic Shell</label>
-			<label for="tops">Chocolate Chips</label>
-			<label for="tops">Gummy Bears</label>
-			<label for="tops">Other</label>
-			<label for="entertainment">What kind of entertainment should we have at the party?</label>
-			<select id="entertainment" name="entertainment">
-				<option value="ballonanimals">Balloon Animals</option>
-				<option value="bouncehouse">Bounce House</option>
-				<option value="clown">Clown</option>
-				<option value="cornhole">Cornhole</option>
-				<option value="dj">DJ</option>
-				<option value="facepainting">Face Painting</option>
-				<option value="magician">Magician</option>
-			</select>
-			<input type="text" name="suggestions">
-			Do you have any other suggestions or comments?
-			<button type="submit">Submit</button>
+  <p>
+    <label for="youremail">What is your email address?</label><br>
+    <input type="email" id="youremail" name="youremail" required>
+  </p>
+
+  <p>
+    <label for="yournumber">What is your phone number?</label><br>
+    <input type="text" id="yournumber" name="yournumber" required>
+  </p>
+
+  <p>
+    <label for="numberofpeoplebrought">How many people will you bring with you to the party?</label><br>
+    <input type="number" id="numberofpeoplebrought" name="numberofpeoplebrought" required>
+  </p>
+  <p>
+        What is your favorite flavor of ice cream?<br>
+
+        <input type="radio" id="vanilla" name="flavor" value="vanilla">
+        <label for="vanilla">Vanilla</label><br>
+
+        <input type="radio" id="chocchip" name="flavor" value="chocchip">
+        <label for="chocchip">Chocolate Chip</label><br>
+
+        <input type="radio" id="strawberry" name="flavor" value="strawberry">
+        <label for="strawberry">Strawberry</label><br>
+
+        <input type="radio" id="otherflavor" name="flavor" value="other">
+        <label for="otherflavor">Other</label>
+   </p>
+
+   <p>
+        Which toppings do you like?<br>
+
+        <input type="checkbox" id="sprinkles" name="toppings" value="sprinkles">
+        <label for="sprinkles">Sprinkles</label><br>
+
+        <input type="checkbox" id="magicshell" name="toppings" value="magicshell">
+        <label for="magicshell">Magic Shell</label><br>
+
+        <input type="checkbox" id="chocchips" name="toppings" value="chocchips">
+        <label for="chocchips">Chocolate Chips</label><br>
+
+        <input type="checkbox" id="gummybears" name="toppings" value="gummybears">
+        <label for="gummybears">Gummy Bears</label><br>
+
+        <input type="checkbox" id="othertop" name="toppings" value="other">
+        <label for="othertop">Other</label>
+  </p>
+
+  <p>
+    <label for="entertainment">What kind of entertainment should we have at the party?</label><br>
+    <select id="entertainment" name="entertainment">
+      <option value="ballonanimals">Balloon Animals</option>
+      <option value="bouncehouse">Bounce House</option>
+      <option value="clown">Clown</option>
+      <option value="cornhole">Cornhole</option>
+      <option value="dj">DJ</option>
+      <option value="facepainting">Face Painting</option>
+      <option value="magician">Magician</option>
+    </select>
+  </p>
+
+  <p>
+    <label for="suggestions">Do you have any other suggestions or comments?</label><br>
+    <input type="text" id="suggestions" name="suggestions">
+  </p>
+
+  <button type="submit">Submit</button>
 		</form>
+
 	</body>
 </html>
