@@ -47,14 +47,20 @@
                  radial-gradient(at 30% 31%,#000 29%,#0000 30%),
                  conic-gradient(#000 0 0) bottom/100% 50% no-repeat;
               }
+	      .circle {
+		      width: 50px;
+		      height: 50px;
+		      background-color: red;
+		      border-radius: 50%;
+		
             }
             #chocolateheart{
                 grid-column-start: 3;
                 grid-row-start:2;
             }
-	    #secondheart{
-		grid-column-start: 4;
-		grid-row-start: 3;
+	    #circle{
+		    grid-column-start:2;
+		    grid-row-start:3;
 		}
             .lilbits{
                 grid-column-start: 1;
@@ -77,7 +83,8 @@
     <body>
         <h1>Here, I got you some chocolates &lt;3</h1>
         <div class="container">
-            <div class="heart" id="chocolateheart" id="secondheart"></div>
+            <div class="heart" id="chocolateheart"></div>
+	    <div class="circle" id="chocolatecircle"></div>
             <div class="lilbits">
                 <div id="mnm">
 
