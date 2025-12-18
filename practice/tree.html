@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="../js/validate.js"></script>
+		<title>A pretty tree</title>
+		<style>
+			body{
+				background: linear-gradient(to bottom, #14e81e, #00ea8d, #017ed5, #b53dff, #8d00c4);
+				height: 100vw;
+			}
+			#container{
+				position: relative;
+				width: 600px;
+				height: 800px;
+				display: block;
+				margin: auto;
+				/* background-color: white; */
+			}
+			#tree{
+				width: 0px;
+				height: 0px;
+				border-bottom: 800px solid green;
+				border-left: 300px solid transparent;
+				border-right: 300px solid transparent;
+			}
+			#box{
+				position: absolute;
+				background-image: linear-gradient(to bottom, red, orange);
+				width: 20px;
+				height: 20px;
+				left: 276px;
+				top: 500px;
+			}
+			#circle{
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				left: 288px;
+				top: 200px;
+				background-image: linear-gradient(to bottom, black, white);
+				border-radius: 50%
+			}
+			#oval{
+				position: absolute;
+				width: 20px;
+				height: 10px;
+				top: 235px;
+				left: 248px;
+				background-image: linear-gradient(to bottom, blue, purple);
+				border-radius: 20px / 10px;
+			}
+			#triangle{
+				position: absolute;
+				width: 0px;
+				height: 0px;
+				top: 351px;
+				left: 298px;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 20px solid indigo;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="tree">
+				<div id="box">
+				</div>
+				<div id="circle">
+				</div>
+				<div id="oval">
+				</div>
+				<div id="triangle">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
