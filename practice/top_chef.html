@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Lemonade Stand</title>
+		<style>
+			.grid{
+				display: grid;
+				height: 100vh;
+				width: 180vh;
+				grid: 
+					'head main main' 1fr
+					'menu main main' 5fr
+					'foot foot foot' 2fr
+					/1fr 5fr 2fr;
+			}
+			#header{
+				grid-area: head;
+				width: 100%;
+				height: 100%;
+				background-color: BlanchedAlmond;
+				text-align: center;
+				font-size: 24px;
+				color: black;
+				font-family: Helvetica, sans-serif;
+			}
+			#main{
+				grid-area: main;
+				width: 100%;
+				height: 100%;
+				background-color: DarkKhaki;
+				text-align: left;
+				font-size: 24px;
+				color: black;
+				font-family: Helvetica, sans-serif;
+			}
+			#menu{
+				grid-area: menu;
+				width: 100%;
+				height: 100%;
+				background-color: #FF1493;
+				text-align: center;
+				font-size: 24px;
+				color: black;
+				font-family: Helvetica, sans-serif;
+			}
+			#footer{
+				grid-area: foot;
+				width: 100%;
+				height: 100%;
+				background-color: BlanchedAlmond;
+				text-align: center;
+				font-size: 24px;
+				color: black;
+				font-family: Helvetica, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div id="header">Lemonade Stand</div>
+			<div id="main">
+				<img src="lemonadestand.png" alt="LemonadeStand" width="500" height="500">
+				Lemonade is very cool</div>
+			<div id="menu">- Fresh, Established, Excellence</div>
+			<div id="footer">MENU 
+			- Lemonade
+			- Strawberry lemonade
+			- Water</div>
+		</div>
+	</body>
+</html>
