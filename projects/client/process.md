@@ -1,1 +1,3 @@
 Entry 1 (1-15-26) - I have started my basic html code.
+Entry 2 (1-26-26) - I have had my first client interview via video call. The client has told me that the purpose of the website is to have an easy way to tell viewers of who he is as a streamer, and what he does. His target audience is youth who like fun colorful backgrounds, and symbols. He said he 100% needs links to his socials, like youtube, twitch, etc. He wants his website to have his signature colors of red, orange, and yellow. Then I asked for the text he wanted me to put in, and I made a design mockup that he approved.
+Entry 2 (2-2-26) -
