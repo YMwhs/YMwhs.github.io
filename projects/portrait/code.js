@@ -3,75 +3,121 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle="lightBlue";
 ctx.fillRect(0, 0, 800, 800);
 ctx.fillStyle="lightBlue";
+ctx.beginPath(); // Hair
+ctx.fillStyle = "black";
+ctx.strokeStyle = "black";
+ctx.fillRect(240, 170, 325, 200);
+ctx.stroke();
+ctx.fill();
+ctx.beginPath(); // Neck
+ctx.fillStyle = "#c68642"
+ctx.strokeStyle = "black"
+ctx.fillRect(325, 585, 150, 125);
+ctx.stroke();
+ctx.fill();
 ctx.beginPath(); // Face
+ctx.fillStyle = "#c68642";
 ctx.arc(400, 400, 200, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath(); // Mouth
+ctx.strokeStyle = "crimson";
+ctx.fillStyle = "pink";
 ctx.arc(405, 420, 100, 0, Math.PI, false);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
 ctx.moveTo(305, 420);
 ctx.lineTo(505, 420);
 ctx.stroke();
-ctx.beginPath(); // Teeth
-ctx.strokeRect(385, 420, 25, 30);
+ctx.beginPath();// Teeth
+ctx.strokeStyle = "black";
+ctx.fillStyle = "white";
+ctx.fillRect(385, 420, 25, 30);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(415, 420, 25, 30);
+ctx.fillRect(415, 420, 25, 30);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(355, 420, 25, 30);
+ctx.fillRect(355, 420, 25, 30);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(325, 420, 25, 30);
+ctx.fillRect(325, 420, 25, 30);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(445, 420, 25, 30);
+ctx.fillRect(445, 420, 25, 30);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(475, 420, 25, 30);
+ctx.fillRect(475, 420, 25, 30);
 ctx.stroke();
-ctx.beginPath(); // Braces
-ctx.strokeRect(390, 430, 15, 10);
+ctx.fill();
+ctx.beginPath();// Braces
+ctx.strokeStyle = "grey";
+ctx.fillStyle = "black";
+ctx.fillRect(390, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(420, 430, 15, 10);
+ctx.fillRect(420, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(360, 430, 15, 10);
+ctx.fillRect(360, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(330, 430, 15, 10);
+ctx.fillRect(330, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(450, 430, 15, 10);
+ctx.fillRect(450, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(480, 430, 15, 10);
+ctx.fillRect(480, 430, 15, 10);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
 ctx.moveTo(305, 435);
 ctx.lineTo(500, 435);
 ctx.stroke();
 ctx.beginPath(); // Left eye
+ctx.fillStyle = "white";
 ctx.arc(350, 375, 20, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
+ctx.fillStyle = "brown";
 ctx.arc(350, 375, 10, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
+ctx.fillStyle = "black"
 ctx.arc(350, 375, 5, 0, Math.PI * 2, true);
 ctx.stroke();
-ctx.beginPath(); // Right eye
+ctx.fill();
+ctx.beginPath();// Right eye
+ctx.fillStyle = "white";
 ctx.arc(450, 375, 20, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
+ctx.fillStyle = "brown"
 ctx.arc(450, 375, 10, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
+ctx.fillStyle = "black";
 ctx.arc(450, 375, 5, 0, Math.PI * 2, true);
 ctx.stroke();
-ctx.beginPath(); // Glasses
+ctx.fill();
+ctx.beginPath();// Glasses
+ctx.strokeStyle = "white";
 ctx.strokeRect(310, 350, 75, 50);
 ctx.stroke();
 ctx.beginPath();
@@ -89,46 +135,54 @@ ctx.beginPath();
 ctx.moveTo(485, 375);
 ctx.lineTo(600, 360);
 ctx.stroke();
-ctx.beginPath(); // Hair
-ctx.moveTo(240, 280);
-ctx.lineTo(240, 180);
-ctx.lineTo(540, 180);
-ctx.lineTo(540, 260);
-ctx.stroke();
 ctx.beginPath(); // Nose
+ctx.strokeStyle = "black";
+ctx.fillStyle = "#bf8547";
 ctx.moveTo(400, 390);
 ctx.lineTo(395, 410);
 ctx.lineTo(405, 410);
 ctx.lineTo(400, 390);
 ctx.stroke();
-ctx.beginPath(); // Neck
-ctx.moveTo(325, 585);
-ctx.lineTo(325, 675);
-ctx.moveTo(475, 585);
-ctx.lineTo(475, 675);
-ctx.stroke();
+ctx.fill();
 ctx.beginPath(); // Body
+ctx.strokeStyle = "black";
+ctx.fillStyle = "red";
 ctx.arc(400, 860, 200, 0,  Math.PI, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath(); // Phone
-ctx.strokeRect(650, 300, 100, 200);
+ctx.strokeStyle = "black";
+ctx.fillStyle = "Blue";
+ctx.fillRect(650, 300, 100, 200);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(650, 480, 100, 20);
+ctx.fillStyle = "black";
+ctx.fillRect(650, 480, 100, 20);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(650, 300, 100, 20);
+ctx.fillRect(650, 300, 100, 20);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
+ctx.strokeStyle = "grey";
+ctx.fillStyle = "grey";
 ctx.moveTo(685, 310);
 ctx.lineTo(715, 310);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
 ctx.arc(700, 490, 7, 0, Math.PI * 2, true);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath(); // Cross
-ctx.strokeRect(100, 300, 30, 200);
+ctx.fillStyle = "brown";
+ctx.strokeStyle = "brown";
+ctx.fillRect(100, 300, 30, 200);
 ctx.stroke();
+ctx.fill();
 ctx.beginPath();
-ctx.strokeRect(75, 320, 80, 30);
+ctx.fillRect(75, 320, 80, 30);
 ctx.stroke();
+ctx.fill();
