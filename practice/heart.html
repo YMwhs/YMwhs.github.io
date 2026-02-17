@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Heart</title>		
+	</head>
+	<body>
+		<h1>A heart</h1>
+		<canvas width = 800 height = 800 id="heart"></canvas>
+		<script>
+			const canvas = document.getElementById("heart");
+			const ctx = canvas.getContext("2d");
+			ctx.fillStyle="pink";
+			ctx.fillRect(0, 0, 800, 800);
+			ctx.fillStyle="red";
+			ctx.beginPath();
+			ctx.arc(200, 200, 200, -Math.PI, 0);
+			ctx.arc(0, 0, 200, -Math.PI, 0);
+		</script>
+	</body>
+</html>
