@@ -10,8 +10,8 @@ ctx.fillRect(240, 170, 325, 200);
 ctx.stroke();
 ctx.fill();
 ctx.beginPath(); // Neck
-ctx.fillStyle = "#c68642"
-ctx.strokeStyle = "black"
+ctx.fillStyle = "#c68642";
+ctx.strokeStyle = "black";
 ctx.fillRect(325, 585, 150, 125);
 ctx.stroke();
 ctx.fill();
