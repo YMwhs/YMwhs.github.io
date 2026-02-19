@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Canvas Functions</title>
+	</head>
+	<body>
+		<h1>Here are some functions</h1>
+		<canvas width=800 height=800 id="myCanvas"></canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+
+			// Theres a nice function called fillRect()
+			ctx.fillRect(100, 100, 500, 500);
+
+			// Wouldn't it be nice if canvas gave us a function
+			// Called fillCircle
+			// DO IT!
+			function fillCircle(x, y, radius, color){
+				ctx.fillStyle = color;
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0,  2*Math.PI);
+				ctx.fill();
+			}
+			fillCircle(200, 200, 100, "red");
+		</script>
+	</body>
+</html>
