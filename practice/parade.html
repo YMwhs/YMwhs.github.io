@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Animation</title>
+	</head>
+	<body>
+		<canvas width=800 height=800 id="myCanvas"></canvas>
+		<script>
+			const canvas = document.getElementById("myCanvas");
+			const ctx = canvas.getContext("2d");
+			let x = 1;
+			let x2 = 1;
+			let x3 = 1;
+			let x4 = 1;
+			let x5 = 1;
+			let xx = 1;
+			let xx2 = 1;
+			let xx3 = 1;
+			let xx4 = 1;
+			let xx5 = 1;
+			let xxx = 1;
+			let xxx2 = 1;
+			let xxx3 = 1;
+			let xxx4 = 1;
+			let xxx5 = 1;
+			let time = 0;
+			let speed = 1;
+			function animate(){
+				time = time + 1;
+
+				if(time < 800){
+					x = x + speed;
+				}
+				if(time > 100){
+					x2 = x2 + speed;
+				}
+				if (time > 100){
+					x3 = x3 + speed;
+				}
+				if (time > 200){
+					x4 = x4 + speed;
+				}
+				if (time > 200){
+					x5 = x5 + speed;
+				}
+				if(time < 800){
+					xx = xx + speed;
+				}
+				if(time > 100){
+					xx2 = xx2 + speed;
+				}
+				if (time > 100){
+					xx3 = xx3 + speed;
+				}
+				if (time > 200){
+					xx4 = xx4 + speed;
+				}
+				if (time > 200){
+					xx5 = xx5 + speed;
+				}
+				if(time < 800){
+					xxx = xxx + speed; // = means assign
+				}
+				if(time > 100){
+					xxx2 = xxx2 + speed;
+				}
+				if (time > 100){
+					xxx3 = xxx3 + speed;
+				}
+				if (time > 200){
+					xxx4 = xxx4 + speed;
+				}
+				if (time > 200){
+					xxx5 = xxx5 + speed;
+				}
+				ctx.clearRect(0, 0, 800, 800);
+				ctx.fillRect(x, 100, 10, 10);
+				ctx.fillRect(x2, 80, 20, 20);
+				ctx.fillRect(x3, 120, 20, 20);
+				ctx.fillRect(x4, 60, 30, 30);
+				ctx.fillRect(x5, 140, 30, 30);
+				ctx.fillRect(xx, 400, 10, 10);
+				ctx.fillRect(xx2, 380, 20, 20);
+				ctx.fillRect(xx3, 420, 20, 20);
+				ctx.fillRect(xx4, 360, 30, 30);
+				ctx.fillRect(xx5, 440, 30, 30);
+				ctx.fillRect(xxx, 700, 10, 10);
+				ctx.fillRect(xxx2, 680, 20, 20);
+				ctx.fillRect(xxx3, 720, 20, 20);
+				ctx.fillRect(xxx4, 660, 30, 30);
+				ctx.fillRect(xxx5, 740, 30, 30);
+				requestAnimationFrame(animate);
+			}
+			animate();
+		</script>
+	</body>
+</html>
