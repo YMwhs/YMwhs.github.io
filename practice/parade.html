@@ -25,10 +25,20 @@
 			let xxx5 = 1;
 			let time = 0;
 			let speed = 1;
+			function donutMaker(x, y, radius, color, holeSize){
+				ctx.beginPath();
+				ctx.arc(x, y, radius, 0,  2*Math.PI);
+				ctx.fillStyle = color;
+				ctx.fill();
+				ctx.beginPath();
+				ctx.arc(x, y, holeSize, 0, 2*Math.PI);
+				ctx.fillStyle = "white";
+				ctx.fill();
+			}
 			function animate(){
 				time = time + 1;
 
-				if(time < 800){
+				if(time < 825){
 					x = x + speed;
 				}
 				if(time > 100){
@@ -43,7 +53,7 @@
 				if (time > 200){
 					x5 = x5 + speed;
 				}
-				if(time < 800){
+				if(time < 825){
 					xx = xx + speed;
 				}
 				if(time > 100){
@@ -58,7 +68,7 @@
 				if (time > 200){
 					xx5 = xx5 + speed;
 				}
-				if(time < 800){
+				if(time < 825){
 					xxx = xxx + speed; // = means assign
 				}
 				if(time > 100){
@@ -74,21 +84,21 @@
 					xxx5 = xxx5 + speed;
 				}
 				ctx.clearRect(0, 0, 800, 800);
-				ctx.fillRect(x, 100, 10, 10);
-				ctx.fillRect(x2, 80, 20, 20);
-				ctx.fillRect(x3, 120, 20, 20);
-				ctx.fillRect(x4, 60, 30, 30);
-				ctx.fillRect(x5, 140, 30, 30);
-				ctx.fillRect(xx, 400, 10, 10);
-				ctx.fillRect(xx2, 380, 20, 20);
-				ctx.fillRect(xx3, 420, 20, 20);
-				ctx.fillRect(xx4, 360, 30, 30);
-				ctx.fillRect(xx5, 440, 30, 30);
-				ctx.fillRect(xxx, 700, 10, 10);
-				ctx.fillRect(xxx2, 680, 20, 20);
-				ctx.fillRect(xxx3, 720, 20, 20);
-				ctx.fillRect(xxx4, 660, 30, 30);
-				ctx.fillRect(xxx5, 740, 30, 30);
+				donutMaker(x, 100, 5, "red", 1.5);
+				donutMaker(x2, 80, 20, "orange", 5);
+				donutMaker(x3, 120, 20, "orange", 5);
+				donutMaker(x4, 60, 30, "yellow", 10);
+				donutMaker(x5, 140, 30, "yellow", 10);
+				donutMaker(xx, 400, 5, "green", 1.5);
+				donutMaker(xx2, 380, 20, "blue", 5);
+				donutMaker(xx3, 420, 20, "blue", 5);
+				donutMaker(xx4, 360, 30, "indigo", 10);
+				donutMaker(xx5, 440, 30, "indigo", 10);
+				donutMaker(xxx, 700, 5, "purple", 1.5);
+				donutMaker(xxx2, 680, 20, "pink", 5);
+				donutMaker(xxx3, 720, 20, "pink", 5);
+				donutMaker(xxx4, 660, 30, "black", 10);
+				donutMaker(xxx5, 740, 30, "black", 10);
 				requestAnimationFrame(animate);
 			}
 			animate();
