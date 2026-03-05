@@ -7,8 +7,19 @@ This game takes place at Kings Dominion. The user will be able to go around King
 ```mermaid
 graph TD;
 	car(((Car)))-->Plaza;
-	Plaza-->Rides
-	Rides-->Intimidator305
+	Plaza-->Rides;
+	Rides-->Pantherian;
+	Rides-->Rapterra;
+	Rides-->Dominator;
+	Rides-->Carousel;
+	Rides-->Windseeker;
+	Plaza-->Seats;
+	Seats-->SitDown;
+	Seats-->TakeANap;
+	Plaza-->FoodCourt;
+	FoodCourt-->McDondalds;
+	FoodCourt-->Subway;
+	FoodCourt-->DunkinDonuts;
 ```
 
 ## Story
