@@ -6,9 +6,9 @@ This game takes place at Kings Dominion. The user will be able to go around King
 ## Map
 ```mermaid
 graph TD;
-	car(((Car))) --> Plaza;
-	Plaza --> Rides
-	Rides --> Intimidator 305
+	car(((Car)))-->Plaza;
+	Plaza-->Rides
+	Rides-->Intimidator305
 ```
 
 ## Story
