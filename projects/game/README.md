@@ -8,14 +8,10 @@ This game takes place at Kings Dominion. The user will be able to go around King
 graph TD;
 	car(((Car)))-->Plaza;
 	Plaza-->Rides;
-	Rides-->Pantherian;
-	Rides-->Rapterra;
-	Rides-->Dominator;
-	Rides-->Carousel;
-	Rides-->Windseeker;
+	Rides-->InternationalStreet;
+	Rides-->JungleX-Pedition;
+	Rides-->OldVirginia;
 	Plaza-->Seats;
-	Seats-->SitDown;
-	Seats-->TakeANap;
 	Plaza-->FoodCourt;
 	FoodCourt-->McDondalds;
 	FoodCourt-->Subway;
