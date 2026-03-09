@@ -8,7 +8,7 @@ This game takes place at Kings Dominion. The user will be able to go around King
 graph TD;
 	car(((Car)))-->Plaza;
 	Plaza-->Rides;
-	Rides-->InternationalStreet;
+	Rides-->CandyAppleGrove;
 	Rides-->JungleX-Pedition;
 	Rides-->OldVirginia;
 	Plaza-->Seats;
