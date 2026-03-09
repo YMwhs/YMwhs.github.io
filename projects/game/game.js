@@ -61,8 +61,8 @@ function locationRides(){
 		stayHere();
 		waitThenCall(locationRides);
 	}
-	waitForInput(processInput)
 	}
+	waitForInput(processInput)
 }
 
 function locationCandyAppleGrove(){
