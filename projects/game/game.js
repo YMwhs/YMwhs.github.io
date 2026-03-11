@@ -59,14 +59,18 @@ function locationPlaza(){
 	clear();
     print("\nYou are in the plaza!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tRides");
+        "\n\tRides" + "\n\tFood Court");
     
     function processInput(input){
         if (input.toLowerCase() == "rides") {
-            locationRides();
-        } else {
-            stayHere();
-            waitThenCall(locationPlaza);
+            	locationRides();
+        }
+	else if (input.toLowerCase() == "food court"){
+		locationFoodCourt();
+	}
+	else {
+            	stayHere();
+            	waitThenCall(locationPlaza);
         }
     }
     waitForInput(processInput);
@@ -118,7 +122,7 @@ function locationFoodCourt(){
 function locationMcDonalds(){
 	clear();
 	print("\nYou are at Mcdonalds!");
-	print"\nWhat would you like to get?" + "\n\tFrench Fries" + "\n\tMilkshake" + "\n\tBig Mac");
+	print("\nWhat would you like to get?" + "\n\tFrench Fries" + "\n\tMilkshake" + "\n\tBig Mac");
 	function processInput(input){
 		if (input.toLowerCase() == "french fries"){
 			foodJustEaten = true;
@@ -203,7 +207,7 @@ function locationDunkinDonuts(){
 			print("\nThe donut was sweet, and it only took 15 minutes, maybe rest then go on another ride!");
 			locationPlazaReturn();
 		}
-		else if (input.toLowerCase() == "vanilla donut){
+		else if (input.toLowerCase() == "vanilla donut"){
 			foodJustEaten = true;
 			time = time - 10;
 			foodEaten = foodEaten + 1;
