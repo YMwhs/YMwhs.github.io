@@ -59,7 +59,7 @@ function locationPlaza(){
 	clear();
     print("\nYou are in the plaza!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tRides" + "\n\tFood Court");
+        "\n\tRides" + "\n\tFood Court" + "\n\tBench");
     
     function processInput(input){
         if (input.toLowerCase() == "rides") {
@@ -67,6 +67,9 @@ function locationPlaza(){
         }
 	else if (input.toLowerCase() == "food court"){
 		locationFoodCourt();
+	}
+	else if (input.toLowerCase() == "bench"){
+		locationBench();
 	}
 	else {
             	stayHere();
@@ -78,9 +81,9 @@ function locationPlaza(){
 
 
 function locationPlazaReturn(){
-    print("\nYou back at the plaza!");
+    print("\nYour back at the plaza!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tRides");
+        "\n\tRides" + "\n\tFood Court" + "\n\tBench");
     
     function processInput(input){
         if (input.toLowerCase() == "rides") {
@@ -89,12 +92,43 @@ function locationPlazaReturn(){
 	else if (input.toLowerCase() == "foodcourt"){
 		locationFoodCourt();
 	}
+	else if (input.toLowerCase() == "bench"){
+		locationBench();
+	}
 	else {
            	stayHere();
            	waitThenCall(locationPlaza);
         }
     }
     waitForInput(processInput);
+}
+
+function locationBench(){
+	clear();
+	print("\nYou are on the bench!");
+	print("\nWhat would you like to do?" + "\n\tRest" + "\n\tSleep");
+	function processInput(input){
+		if (input.toLowerCase() == "rest"){
+			wentOnRide = false;
+			foodJustEaten = false;
+			time = time - 15;
+			print("\nYou rested for 15 minutes, but you're feeling much better! Go have some fun.");
+			locationPlazaReturn();
+		}
+		else if (input.toLowerCase() == "sleep"){
+			wentOnRide = false;
+			foodJustEaten = false;
+			time = time - 60;
+			foodEaten = foodEaten - 1;
+			print("\nYou dozed off peacefully, but it's been 60 minutes and you're starving, get up!");
+			locationPlazaReturn();
+		}
+		else{
+			stayHere();
+			waitThenCall(locationPlaza);
+		}
+	}
+	waitForInput(processInput);
 }
 
 function locationFoodCourt(){
