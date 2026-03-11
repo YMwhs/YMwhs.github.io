@@ -12,26 +12,27 @@ let foodEaten = 0;
 function throwUpCheck(){
 	if (wentOnRide == true && foodJustEaten == true){
 		clear();
-		print("\n You threw up! game over...");
+		print("\nYou threw up! game over...");
 		gameActive = false;
 	}
 }
 function timeCheck(){
-	if (time >= 0){
+	if (time <= 0){
 		if (ridesWentOn >= 4 && foodEaten >= 2){
-			print("\n You had a great day! Congrats you beat the game.");
+			print("\nYou had a great day! Congrats you beat the game.");
 			gameActive = false;
 		}
 		else{
-			print("\n You got to the end of the day... but at what cost? you didn't have fun :(");
+			print("\nYou got to the end of the day... but at what cost? you didn't have fun :(");
 			gameActive = false;
 		}
 	}
 }
 
 function tiredCheck(){
-		if (wentOnRide == true && ridesWentOn >= 2){
+		if (wentOnRide == true && ridesWentOn >= 2 && gameActive == true){
 			time = time - 120;
+			wentOnRide = false;
 			print("\nYou blacked out after going on multiple rollercoasters in a row...");
 			print("\nYou awaken and see you've lost 2 hours...");
 		}
@@ -81,6 +82,7 @@ function locationPlaza(){
 
 
 function locationPlazaReturn(){
+if (gameActive == true){
     print("\nYour back at the plaza!");
     print("\nWhere do you want to go next? Say one of these choices:" +
         "\n\tRides" + "\n\tFood Court" + "\n\tBench");
@@ -89,7 +91,7 @@ function locationPlazaReturn(){
         if (input.toLowerCase() == "rides") {
            	locationRides();
         }
-	else if (input.toLowerCase() == "foodcourt"){
+	else if (input.toLowerCase() == "food court"){
 		locationFoodCourt();
 	}
 	else if (input.toLowerCase() == "bench"){
@@ -102,6 +104,7 @@ function locationPlazaReturn(){
     }
     waitForInput(processInput);
 }
+}
 
 function locationBench(){
 	clear();
@@ -113,6 +116,9 @@ function locationBench(){
 			foodJustEaten = false;
 			time = time - 15;
 			print("\nYou rested for 15 minutes, but you're feeling much better! Go have some fun.");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "sleep"){
@@ -121,6 +127,9 @@ function locationBench(){
 			time = time - 60;
 			foodEaten = foodEaten - 1;
 			print("\nYou dozed off peacefully, but it's been 60 minutes and you're starving, get up!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else{
@@ -163,6 +172,9 @@ function locationMcDonalds(){
 			time = time - 20;
 			foodEaten = foodEaten + 1;
 			print("\nThe fries were so good! they were crisp and crunchy, but you should take a rest...");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "milkshake"){
@@ -171,6 +183,9 @@ function locationMcDonalds(){
 			foodEaten = foodEaten + 1;
 			print("\nThe milkshake was thick and nice, but you remember that your lactose intolerant... So you run to the bathroom");
 			print("\nIt's been a hour.");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "big mac"){
@@ -178,6 +193,9 @@ function locationMcDonalds(){
 			time = time - 20;
 			foodEaten = foodEaten + 1;
 			print("\nThe big mac was giant and filling, but you should take a rest...");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else{
@@ -197,7 +215,10 @@ function locationSubway(){
 			foodJustEaten = true;
 			time = time - 25;
 			foodEaten = foodEaten + 1;
-			print("\nThe philly was good... but it took 25 minutes, maybe rest then go on another ride!")
+			print("\nThe philly was good... but it took 25 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "the monster"){
@@ -205,6 +226,9 @@ function locationSubway(){
 			time = time - 25;
 			foodEaten = foodEaten + 1;
 			print("\nThe monster was good... but it took 25 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "the outlaw"){
@@ -212,6 +236,9 @@ function locationSubway(){
 			time = time - 25;
 			foodEaten = foodEaten + 1;
 			print("\nThe outlaw was good... but it took 25 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else{
@@ -232,6 +259,9 @@ function locationDunkinDonuts(){
 			time = time - 10;
 			foodEaten = foodEaten + 1;
 			print("\nThe donut was a bit plain, but it only took 10 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "chocolate donut"){
@@ -239,6 +269,9 @@ function locationDunkinDonuts(){
 			time = time - 15;
 			foodEaten = foodEaten + 1;
 			print("\nThe donut was sweet, and it only took 15 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "vanilla donut"){
@@ -246,6 +279,9 @@ function locationDunkinDonuts(){
 			time = time - 10;
 			foodEaten = foodEaten + 1;
 			print("\nThe donut was sweet, and it only took 15 minutes, maybe rest then go on another ride!");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
 			locationPlazaReturn();
 		}
 		else{
@@ -289,14 +325,20 @@ function locationCandyAppleGrove(){
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
 			print("\nYou had a sweet blast! but it's been 30 minutes, you should take a break and rest.");
-			waitThenCall(locationPlazaReturn());
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "apple zapple"){
 			wentOnRide = true;
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
 			print("\nYou had a sweet blast! but it's been 30 minutes, you should take a break and rest.");
-			waitThenCall(locationPlazaReturn());
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		} else {
 			stayHere();
 			waitThenCall(locationCandyAppleGrove);
@@ -314,14 +356,20 @@ function locationJungleXPedition(){
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
 			print("\nYou had a roaring blast! but it's been 30 minutes, you should take a break and rest.");
-			waitThenCall(locationPlazaReturn());
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "rapterra"){
 			wentOnRide = true;
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
 			print("\nYou had a roaring blast! but it's been 30 minutes, you should take a break and rest.");
-			waitThenCall(locationPlazaReturn());
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		} else {
 			stayHere();
 			waitThenCall(locationJungleXPedition);
@@ -339,14 +387,20 @@ function locationOldVirginia(){
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
 			print("\nYou had a old time blast! but it's been 30 minutes, you should take a break and rest.");
-			waitThenCall(locationPlazaReturn());
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		}
 		else if (input.toLowerCase() == "reptillian"){
 			wentOnRide = true;
 			time = time - 30;
 			ridesWentOn = ridesWentOn + 1;
-			print("\nYou had a blast! but it's been 30 minutes, you should take a break and rest.");	
-			waitThenCall(locationPlazaReturn());
+			print("\nYou had a blast! but it's been 30 minutes, you should take a break and rest.");
+			throwUpCheck();
+			timeCheck();
+			tiredCheck();
+			locationPlazaReturn();
 		} else {
 			stayHere();
 			waitThenCall(locationOldVirginia);
