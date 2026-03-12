@@ -412,7 +412,7 @@ function locationOldVirginia(){
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
-    print("Welcome to my adventure! Press any key to start");
+    print("Welcome to my adventure! The goal is to have a fulfilled day with food and rides, while in 300 minutes. Press any key to start");
 
     function processInput(input){
             locationCar();
