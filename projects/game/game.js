@@ -156,7 +156,7 @@ function locationFoodCourt(){
 		}
 		else{
 			stayHere();
-			waitThenCall(locationFoodCourt());
+			waitThenCall(locationFoodCourt);
 		}
 	}
 	waitForInput(processInput);
