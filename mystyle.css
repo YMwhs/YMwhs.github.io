@@ -200,3 +200,22 @@ h2{
 		opacity: 0;
 	}
 }
+.page{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.page p{
+	max-width: 700px;
+}
+.client-img img{
+	width: 25%;
+	height: 25%;
+}
+.game-img img{
+	width: 25%;
+	height: 25%;
+}
