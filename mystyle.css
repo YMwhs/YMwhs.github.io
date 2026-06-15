@@ -201,6 +201,7 @@ h2{
 	}
 }
 .page{
+	padding: 10rem 9% 2rem;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -210,6 +211,9 @@ h2{
 }
 .page p{
 	max-width: 700px;
+	text-align: center;
+	line-height: 1.6;
+	color: white;
 }
 .client-img img{
 	width: 25%;
