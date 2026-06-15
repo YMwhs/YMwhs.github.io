@@ -115,6 +115,19 @@ header, nav, .home{
 	position: relative;
 	z-index: 2;
 }
+h1{
+	font-family: poppins;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	margin: 0;
+}
+
 h2{
 	font-family: poppins;
 	position: absolute;
@@ -216,10 +229,12 @@ h2{
 	color: white;
 }
 .client-img img{
-	width: 25%;
-	height: 25%;
+	width: 450px;
+	max-width: 90%;
+	height: auto;
 }
 .game-img img{
-	width: 25%;
-	height: 25%;
+	width: 450px;
+	max-width: 90%;
+	height: auto;
 }
